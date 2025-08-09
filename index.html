@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Khairy | Professional E-Portfolio | Mechatronics Engineering</title>
+    <meta name="description"
+        content="Professional E-Portfolio showcasing continuous professional development in Mechatronics Engineering">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-logo">
+                    <i class="fas fa-code"></i>
+                    MK
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a href="#introduction" class="nav-link">
+                    <i class="fas fa-user-graduate"></i>
+                    Introduction
+                </a>
+                <a href="#swot" class="nav-link">
+                    <i class="fas fa-chart-line"></i>
+                    SWOT Analysis
+                </a>
+                <a href="#po-attainment" class="nav-link">
+                    <i class="fas fa-trophy"></i>
+                    PO Attainment
+                </a>
+                <a href="#improvement-strategy" class="nav-link">
+                    <i class="fas fa-route"></i>
+                    Action Plan
+                </a>
+                <a href="#education" class="nav-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-tools"></i>
+                    Technical Skills
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-laptop-code"></i>
+                    Projects
+                </a>
+                <a href="#conclusion" class="nav-link">
+                    <i class="fas fa-file-alt"></i>
+                    Conclusion
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- animated-background -->
+    <div class="animated-background">
+        <svg class="background-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+                <!-- Enhanced Gradient with More Color Stops -->
+                <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#0A0A0A;stop-opacity:1" />
+                    <stop offset="20%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                    <stop offset="40%" style="stop-color:#C4A467;stop-opacity:0.15" />
+                    <stop offset="60%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                    <stop offset="80%" style="stop-color:#C4A467;stop-opacity:0.1" />
+                    <stop offset="100%" style="stop-color:#0A0A0A;stop-opacity:1" />
+                </linearGradient>
+
+                <!-- Improved Noise Filter -->
+                <filter id="noise">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="5" stitchTiles="stitch" />
+                    <feColorMatrix type="saturate" values="0" />
+                    <feComponentTransfer>
+                        <feFuncA type="discrete" tableValues="0 0.1 0.15" />
+                    </feComponentTransfer>
+                </filter>
+
+                <!-- Enhanced Glow Effect -->
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="1.5" result="coloredBlur" />
+                    <feComposite in="SourceGraphic" in2="coloredBlur" operator="over" />
+                </filter>
+
+                <!-- Hexagon Pattern -->
+                <pattern id="hexagonPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <path d="M5,0 L10,2.5 L10,7.5 L5,10 L0,7.5 L0,2.5 Z" fill="#C4A467" fill-opacity="0.05" />
+                </pattern>
+            </defs>
+
+            <!-- Base Background -->
+            <rect width="100%" height="100%" fill="url(#mainGradient)" />
+            <rect class="noise-overlay" width="100%" height="100%" filter="url(#noise)" opacity="0.05" />
+
+            <!-- Hexagon Background Pattern -->
+            <rect width="100%" height="100%" fill="url(#hexagonPattern)" opacity="0.1" />
+
+            <!-- Enhanced Animated Elements -->
+            <g class="glow-group">
+                <!-- Geometric Shapes -->
+                <path class="shape" d="M20,30 l5,0 l2.5,4.33 l-2.5,4.33 l-5,0 l-2.5,-4.33 z" fill="#C4A467"
+                    opacity="0.2" />
+                <path class="shape" d="M70,60 l8,0 l4,6.93 l-4,6.93 l-8,0 l-4,-6.93 z" fill="#C4A467" opacity="0.15" />
+                <path class="shape" d="M40,80 c0,2.76 -2.24,5 -5,5 s-5,-2.24 -5,-5 s2.24,-5 5,-5 S40,77.24 40,80"
+                    fill="#C4A467" opacity="0.1" />
+
+                <!-- Decorative Lines -->
+                <path class="shape" d="M10,20 Q15,25 20,30" stroke="#C4A467" stroke-width="0.2" fill="none"
+                    opacity="0.1" />
+                <path class="shape" d="M85,70 Q90,75 95,80" stroke="#C4A467" stroke-width="0.2" fill="none"
+                    opacity="0.1" />
+                <path class="shape" d="M45,40 Q50,45 55,50" stroke="#C4A467" stroke-width="0.2" fill="none"
+                    opacity="0.1" />
+
+                <!-- Enhanced Particles -->
+                <g class="particle" opacity="0.1">
+                    <path d="M25,45 l2,-2 l2,2 l-2,2 z" fill="#C4A467" />
+                    <path d="M75,25 l1.5,-1.5 l1.5,1.5 l-1.5,1.5 z" fill="#C4A467" />
+                    <path d="M60,85 l1,-1 l1,1 l-1,1 z" fill="#C4A467" />
+                </g>
+
+                <!-- Additional Decorative Elements -->
+                <circle class="shape accent" cx="15" cy="75" r="0.5" fill="#C4A467" opacity="0.2" />
+                <circle class="shape accent" cx="85" cy="25" r="0.5" fill="#C4A467" opacity="0.2" />
+                <circle class="shape accent" cx="50" cy="50" r="0.5" fill="#C4A467" opacity="0.2" />
+            </g>
+        </svg>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Hero Section with Centered Name and Logos -->
+    <main id="main-content">
+        <section class="hero">
+            <div class="logo-container left">
+                <img src="logo3.png" alt="Mechatronics Logo" class="hero-logo floating">
+            </div>
+
+            <div class="hero-content">
+                <div class="name-container">
+                    <div class="hero-top-text">
+                        <span class="welcome-text">Welcome to my portfolio</span>
+                        <div class="animated-line"></div>
+                    </div>
+
+                    <h1 class="main-title">
+                        <span class="first-name">MAHMOUD</span>
+                        <span class="last-name">KHAIRY</span>
+                    </h1>
+
+                    <div class="title-separator">
+                        <span class="line"></span>
+                        <i class="fas fa-crown"></i>
+                        <span class="line"></span>
+                    </div>
+
+                    <h2 class="subtitle gradient-text">Mechatronics Engineer</h2>
+
+                    <div class="hero-icons">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-microchip"></i>
+                            <span class="icon-label">Hardware</span>
+                        </div>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-cogs"></i>
+                            <span class="icon-label">Automation</span>
+                        </div>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-robot"></i>
+                            <span class="icon-label">Robotics</span>
+                        </div>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-code"></i>
+                            <span class="icon-label">Software</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="illustration-container">
+                    <div class="illustration-wrapper">
+                        <img src="in-the-zone.svg" alt="Programmer Illustration" class="programmer-img floating">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-container right">
+                <img src="logo2.png" alt="Mechatronics Logo" class="hero-logo flipped floating">
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-arrow-container">
+                    <i class="fas fa-chevron-down bounce"></i>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Professional Introduction Section -->
+        <section class="introduction" id="introduction">
+            <div class="container">
+                <h2 class="section-title">Professional Introduction</h2>
+                <div class="introduction-content">
+                    <div class="intro-main">
+                        <div class="intro-text">
+                            <div class="intro-highlight">
+                                <h3 class="text-gradient">Aspiring Mechatronics Engineer</h3>
+                                <p class="text-large">Specializing in Intelligent Systems & Advanced Manufacturing</p>
+                            </div>
+
+                            <div class="intro-description">
+                                <p>As a final-year Mechatronics Engineering student at Asia Pacific University, I am
+                                    passionate about bridging the gap between mechanical systems, electronics, and
+                                    intelligent control. My academic journey has been dedicated to mastering
+                                    interdisciplinary engineering principles that drive innovation in intelligent
+                                    machines and advanced manufacturing systems.</p>
+
+                                <p>Through rigorous academic training and practical experience, I have developed
+                                    expertise in robotics, automation, embedded systems, and IoT integration. My
+                                    commitment to continuous professional development is demonstrated through my
+                                    engagement with cutting-edge technologies and collaborative projects that address
+                                    real-world engineering challenges.</p>
+
+                                <p>I am particularly focused on contributing to the engineering industry through
+                                    technical proficiency, creative problem-solving, and collaborative innovation, both
+                                    locally in Malaysia and globally in the rapidly evolving field of mechatronics.</p>
+                            </div>
+
+                            <div class="professional-highlights">
+                                <div class="highlight-card">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h4>Innovation Focus</h4>
+                                    <p>Developing intelligent solutions for complex engineering challenges</p>
+                                </div>
+                                <div class="highlight-card">
+                                    <i class="fas fa-users"></i>
+                                    <h4>Collaborative Approach</h4>
+                                    <p>Working effectively in multidisciplinary teams</p>
+                                </div>
+                                <div class="highlight-card">
+                                    <i class="fas fa-globe"></i>
+                                    <h4>Global Perspective</h4>
+                                    <p>Understanding international engineering standards and practices</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="intro-visual">
+                            <div class="profile-section">
+                                <div class="profile-image">
+                                    <object data="personal-goals.svg" type="image/svg+xml" class="goals-svg"></object>
+                                </div>
+                                <div class="personal-info">
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Bukit Jalil, Kuala Lumpur</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>tp066167@mail.apu.edu.my</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-phone"></i>
+                                        <span>+60134457353</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-flag"></i>
+                                        <span>Egypt (Residency: Kuwait)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SWOT Analysis Section -->
+        <section class="swot-analysis" id="swot">
+            <div class="container">
+                <h2 class="section-title">SWOT Analysis</h2>
+                <div class="swot-intro">
+                    <p class="text-large">A comprehensive analysis of my Program Outcomes (PO) achievements, identifying
+                        strengths, weaknesses, opportunities, and threats in technical, personal, and collaborative
+                        competencies.</p>
+                </div>
+
+                <div class="swot-grid">
+                    <div class="swot-card strengths">
+                        <div class="swot-header">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Strengths</h3>
+                        </div>
+                        <ul class="swot-list">
+                            <li><strong>Technical Proficiency:</strong> Advanced skills in robotics, automation, and
+                                embedded systems</li>
+                            <li><strong>Problem-Solving:</strong> Analytical approach to complex engineering challenges
+                            </li>
+                            <li><strong>Adaptability:</strong> Quick learning and adaptation to new technologies</li>
+                            <li><strong>Communication:</strong> Effective technical communication and documentation</li>
+                            <li><strong>Project Management:</strong> Experience in leading and coordinating engineering
+                                projects</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card weaknesses">
+                        <div class="swot-header">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h3>Weaknesses</h3>
+                        </div>
+                        <ul class="swot-list">
+                            <li><strong>Industry Experience:</strong> Limited exposure to large-scale industrial
+                                applications</li>
+                            <li><strong>Advanced Manufacturing:</strong> Need deeper knowledge in Industry 4.0
+                                implementations</li>
+                            <li><strong>Business Acumen:</strong> Developing understanding of commercial engineering
+                                aspects</li>
+                            <li><strong>Specialized Software:</strong> Expanding expertise in advanced simulation tools
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card opportunities">
+                        <div class="swot-header">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Opportunities</h3>
+                        </div>
+                        <ul class="swot-list">
+                            <li><strong>Emerging Technologies:</strong> AI/ML integration in mechatronic systems</li>
+                            <li><strong>Industry 4.0:</strong> Growing demand for smart manufacturing solutions</li>
+                            <li><strong>Sustainability:</strong> Green technology and renewable energy systems</li>
+                            <li><strong>Global Market:</strong> International opportunities in automation</li>
+                            <li><strong>Research & Development:</strong> Advanced studies and innovation projects</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card threats">
+                        <div class="swot-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Threats</h3>
+                        </div>
+                        <ul class="swot-list">
+                            <li><strong>Rapid Technology Change:</strong> Need for continuous skill updates</li>
+                            <li><strong>Market Competition:</strong> High competition in engineering job market</li>
+                            <li><strong>Economic Factors:</strong> Economic uncertainties affecting engineering
+                                investments</li>
+                            <li><strong>Automation Paradox:</strong> Balancing automation with human employment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Outcomes Attainment Section -->
+        <section class="po-attainment" id="po-attainment">
+            <div class="container">
+                <h2 class="section-title">Program Outcomes Attainment & Evaluation</h2>
+                <div class="po-intro">
+                    <p class="text-large">Comprehensive reflection on Program Outcomes (PO) achievements, analyzing
+                        strengths, identifying performance gaps, and outlining continuous improvement strategies for
+                        educational and career advancement.</p>
+                </div>
+
+                <!-- PO Summary Table -->
+                <div class="po-summary-section">
+                    <h3 class="po-summary-title">Program Outcomes Summary (PO1 to PO12)</h3>
+                    <div class="po-table-container">
+                        <table class="po-summary-table">
+                            <thead>
+                                <tr>
+                                    <th>PO</th>
+                                    <th>Outcome Area</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PO1</td>
+                                    <td>Engineering Knowledge</td>
+                                    <td class="score-excellent">1.00</td>
+                                </tr>
+                                <tr>
+                                    <td>PO2</td>
+                                    <td>Problem Analysis</td>
+                                    <td class="score-good">0.71</td>
+                                </tr>
+                                <tr>
+                                    <td>PO3</td>
+                                    <td>Design/Development of Solutions</td>
+                                    <td class="score-excellent">1.00</td>
+                                </tr>
+                                <tr>
+                                    <td>PO4</td>
+                                    <td>Investigation</td>
+                                    <td class="score-good">0.75</td>
+                                </tr>
+                                <tr>
+                                    <td>PO5</td>
+                                    <td>Modern Tool Usage</td>
+                                    <td class="score-good">0.80</td>
+                                </tr>
+                                <tr>
+                                    <td>PO6</td>
+                                    <td>Engineer and Society</td>
+                                    <td class="score-excellent">1.00</td>
+                                </tr>
+                                <tr>
+                                    <td>PO7</td>
+                                    <td>Environment and Sustainability</td>
+                                    <td class="score-excellent">1.00</td>
+                                </tr>
+                                <tr>
+                                    <td>PO8</td>
+                                    <td>Ethics</td>
+                                    <td class="score-excellent">1.00</td>
+                                </tr>
+                                <tr>
+                                    <td>PO9</td>
+                                    <td>Individual & Team Work</td>
+                                    <td class="score-excellent">1.00</td>
+                                </tr>
+                                <tr>
+                                    <td>PO10</td>
+                                    <td>Communication</td>
+                                    <td class="score-needs-improvement">0.50</td>
+                                </tr>
+                                <tr>
+                                    <td>PO11</td>
+                                    <td>Project Management & Finance</td>
+                                    <td class="score-moderate">0.67</td>
+                                </tr>
+                                <tr>
+                                    <td>PO12</td>
+                                    <td>Lifelong Learning</td>
+                                    <td class="score-excellent">1.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="po-average">
+                        <div class="average-score">
+                            <span class="average-label">Average PLO Score:</span>
+                            <span class="average-value">0.87</span>
+                        </div>
+                    </div>
+
+                    <div class="po-analysis">
+                        <h4>Performance Analysis</h4>
+                        <p>This is a very solid performance overall, with full achievement in most areas. However:</p>
+                        <ul class="analysis-points">
+                            <li><strong>PO10 (Communication)</strong> is the weakest at 0.50, which suggests room for
+                                improvement in reports, presentations, or teamwork clarity.</li>
+                            <li><strong>PO11 (Project Management)</strong> is moderate, likely needing more engagement
+                                in planning, budgeting, or time/resource management tasks.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="po-grid">
+                    <div class="po-category">
+                        <h3 class="po-title">Technical Competencies</h3>
+                        <div class="po-items">
+                        <div class="po-item">
+                            <div class="po-header">
+                                <h4>Engineering Knowledge</h4>
+                                <div class="po-rating">
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span class="rating-text">85%</span>
+                                </div>
+                            </div>
+                            <p>Strong foundation in mathematics, science, and engineering fundamentals with
+                                practical application in mechatronic systems.</p>
+                            <div class="improvement-note">
+                                <strong>Improvement Focus:</strong> Advanced control theory and system optimization
+                            </div>
+                        </div>
+
+                        <div class="po-item">
+                            <div class="po-header">
+                                <h4>Problem Analysis</h4>
+                                <div class="po-rating">
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 80%"></div>
+                                    </div>
+                                    <span class="rating-text">80%</span>
+                                </div>
+                            </div>
+                            <p>Proficient in identifying, formulating, and solving complex engineering problems
+                                using analytical methods.</p>
+                            <div class="improvement-note">
+                                <strong>Improvement Focus:</strong> Multi-disciplinary problem-solving approaches
+                            </div>
+                        </div>
+
+                        <div class="po-item">
+                            <div class="po-header">
+                                <h4>Design/Development of Solutions</h4>
+                                <div class="po-rating">
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 78%"></div>
+                                    </div>
+                                    <span class="rating-text">78%</span>
+                                </div>
+                            </div>
+                            <p>Capable of designing systems and components that meet specified needs with
+                                consideration of constraints.</p>
+                            <div class="improvement-note">
+                                <strong>Improvement Focus:</strong> Sustainable design practices and lifecycle
+                                analysis
+                            </div>
+                        </div>
+                    </div>
+
+
+
+       
+                    <div class="po-category">
+                        <h3 class="po-title">Professional Skills</h3>
+                        <div class="po-items">
+                        <div class="po-item">
+                            <div class="po-header">
+                                <h4>Communication</h4>
+                                <div class="po-rating">
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 82%"></div>
+                                    </div>
+                                    <span class="rating-text">82%</span>
+                                </div>
+                            </div>
+                            <p>Effective communication with diverse audiences through reports, presentations, and
+                                technical documentation.</p>
+                            <div class="improvement-note">
+                                <strong>Improvement Focus:</strong> Cross-cultural communication and stakeholder
+                                engagement
+                            </div>
+                        </div>
+
+                        <div class="po-item">
+                            <div class="po-header">
+                                <h4>Teamwork</h4>
+                                <div class="po-rating">
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 88%"></div>
+                                    </div>
+                                    <span class="rating-text">88%</span>
+                                </div>
+                            </div>
+                            <p>Strong collaborative skills in multidisciplinary teams with leadership capabilities.
+                            </p>
+                            <div class="improvement-note">
+                                <strong>Improvement Focus:</strong> Virtual team management and conflict resolution
+                            </div>
+                        </div>
+
+                        <div class="po-item">
+                            <div class="po-header">
+                                <h4>Lifelong Learning</h4>
+                                <div class="po-rating">
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 90%"></div>
+                                    </div>
+                                    <span class="rating-text">90%</span>
+                                </div>
+                            </div>
+                            <p>Demonstrated commitment to continuous learning and professional development.</p>
+                            <div class="improvement-note">
+                                <strong>Improvement Focus:</strong> Structured learning pathways and knowledge
+                                management
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+            
+        </section>
+
+        <!-- Evaluation-Guided Improvement Strategy Section -->
+        <section class="improvement-strategy" id="improvement-strategy">
+            <div class="container">
+                <h2 class="section-title">Academic Portfolio — Action Plan (Mahmoud Khairy)</h2>
+                <div class="strategy-intro">
+                    <p class="text-large">Comprehensive and honest professional development analysis identifying both strengths and critical development areas</p>
+                </div>
+
+                <!-- Action Plan Navigation -->
+                <div class="action-nav">
+                    <button class="nav-btn active" data-target="immediate">
+                        <i class="fas fa-clock"></i>
+                        <span>Immediate Priorities</span>
+                        <small>(0–3 months)</small>
+                    </button>
+                    <button class="nav-btn" data-target="short-term">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Short-Term Goals</span>
+                        <small>(3–12 months)</small>
+                    </button>
+                    <button class="nav-btn" data-target="long-term">
+                        <i class="fas fa-trophy"></i>
+                        <span>Long-Term Vision</span>
+                        <small>(1–3 years)</small>
+                    </button>
+                </div>
+
+                <!-- Comprehensive Development Action Plan -->
+                <div class="action-plan-container">
+                    <!-- Immediate Priorities -->
+                    <div class="action-section active" id="immediate">
+                        <div class="section-header">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Immediate Priorities (0–3 months)</h3>
+                        </div>
+                        
+                        <div class="priority-grid">
+                            <div class="priority-card strengthen">
+                                <div class="card-header">
+                                    <i class="fas fa-comments"></i>
+                                    <h4>Strengthen Communication (PO10)</h4>
+                                </div>
+                                <ul class="action-list">
+                                    <li>Join academic workshops focused on <em>technical writing</em> and <em>presentation skills</em></li>
+                                    <li>Present one project (e.g., <em>Autonomous Mobile Robot</em>) to peers or mentors and gather feedback</li>
+                                    <li>Maintain a weekly engineering blog or journal to build clarity and discipline in communication</li>
+                                </ul>
+                            </div>
+
+                            <div class="priority-card enhance">
+                                <div class="card-header">
+                                    <i class="fas fa-tasks"></i>
+                                    <h4>Enhance Project Management (PO11)</h4>
+                                </div>
+                                <ul class="action-list">
+                                    <li>Lead a small team activity (perhaps in robotics or automation) to practice planning and task scheduling</li>
+                                    <li>Use Gantt charts or Kanban tools (e.g., Trello) to manage tasks from your <em>Smart Manufacturing Cell</em> or <em>Assessment System</em> projects</li>
+                                    <li>Attend a short certification or training (online or in-person) on <em>project planning fundamentals</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Short-Term Goals -->
+                    <div class="action-section" id="short-term">
+                        <div class="section-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Short‑Term Goals (3–12 months)</h3>
+                        </div>
+                        
+                        <div class="goal-grid">
+                            <div class="goal-card analysis">
+                                <div class="card-header">
+                                    <i class="fas fa-search"></i>
+                                    <h4>Deepen Problem Analysis Skills (PO2)</h4>
+                                </div>
+                                <ul class="action-list">
+                                    <li>Use structured frameworks like <em>Root Cause Analysis</em>, decision trees, or FMEA methodology in your <strong>FYP</strong> or PLC/IoT problem-solving tasks</li>
+                                    <li>Apply data-driven analysis to your <em>Smart Grid Management</em> system to refine accuracy or response times</li>
+                                </ul>
+                            </div>
+
+                            <div class="goal-card professional">
+                                <div class="card-header">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <h4>Gain Professional Context (PO8)</h4>
+                                </div>
+                                <ul class="action-list">
+                                    <li>Prepare and present an ethics & safety case study for your <em>Industrial Intern</em> experience</li>
+                                    <li>Document any automation risk considerations from your <em>KAFCO hardware work</em>, tying it to real-world ethical or safety practices</li>
+                                </ul>
+                            </div>
+
+                            <div class="goal-card industry">
+                                <div class="card-header">
+                                    <i class="fas fa-industry"></i>
+                                    <h4>Industry Alignment</h4>
+                                </div>
+                                <ul class="action-list">
+                                    <li>Seek project or part-time internship opportunities that better integrate your strengths in <em>ROS2</em>, <strong>IoT</strong>, or <strong>embedded C++</strong>, showcasing them in real-world industrial settings</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Long-Term Vision -->
+                    <div class="action-section" id="long-term">
+                        <div class="section-header">
+                            <i class="fas fa-star"></i>
+                            <h3>Long‑Term Vision (1–3 years)</h3>
+                        </div>
+                        
+                        <div class="vision-grid">
+                            <div class="vision-card achievement">
+                                <div class="card-header">
+                                    <i class="fas fa-medal"></i>
+                                    <h4>Achieve Full PLO Well-Roundedness (≥ 0.90)</h4>
+                                </div>
+                                <ul class="action-list">
+                                    <li>Use this action plan as a roadmap and periodically evaluate your PLO scores</li>
+                                    <li>Aim for consistent performance across the board — especially in <em>PO2, PO10, and PO11</em>—to elevate your overall average</li>
+                                </ul>
+                            </div>
+
+                            <div class="vision-card capstone">
+                                <div class="card-header">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <h4>Capstone Showcase</h4>
+                                </div>
+                                <ul class="action-list">
+                                    <li>Integrate at least two major projects (e.g., <em>Autonomous Mobile Robot</em> + <em>Smart Manufacturing Cell</em>) into one cohesive, industry-aligned <strong>capstone system</strong>, showcasing it in public forums or your portfolio</li>
+                                </ul>
+                            </div>
+
+                            <div class="vision-card leadership">
+                                <div class="card-header">
+                                    <i class="fas fa-users"></i>
+                                    <h4>Mentorship & Leadership</h4>
+                                </div>
+                                <ul class="action-list">
+                                    <li>Mentor junior APU peers who are entering robotics or embedded systems projects</li>
+                                    <li>Lead a team challenge or competition (e.g., robotics challenge) to develop leadership while giving back</li>
+                                </ul>
+                            </div>
+
+                            <div class="vision-card certifications">
+                                <div class="card-header">
+                                    <i class="fas fa-certificate"></i>
+                                    <h4>Certifications & Technical Visibility</h4>
+                                </div>
+                                <ul class="action-list">
+                                    <li>Earn credentials in <em>Project Management</em> (e.g., CAPM) and <em>Technical Communication</em></li>
+                                    <li>Contribute to open-source platforms or GitHub repositories that tie together your expertise in <em>ROS2</em>, <strong>PLC automation</strong>, or <strong>IoT solutions</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary Table -->
+                <div class="summary-section">
+                    <h3 class="summary-title">Summary Table</h3>
+                    <div class="summary-table-container">
+                        <table class="summary-table">
+                            <thead>
+                                <tr>
+                                    <th>Timeline</th>
+                                    <th>Focus Areas</th>
+                                    <th>Key Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><em>0–3 months</em></td>
+                                    <td>PO10 (Communication), PO11 (PM)</td>
+                                    <td>Presentation drills, Gantt/Kanban, writing blog updates</td>
+                                </tr>
+                                <tr>
+                                    <td><em>3–12 months</em></td>
+                                    <td>PO2 (Analysis), PO8 (Ethics)</td>
+                                    <td>Structured analysis in FYP, industrial-case presentations</td>
+                                </tr>
+                                <tr>
+                                    <td><em>1–3 years</em></td>
+                                    <td>Full PLO achievement, Leadership</td>
+                                    <td>Capstone integration, mentoring, certifications</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Key Success Factors -->
+                <div class="success-factors">
+                    <div class="factors-header">
+                        <i class="fas fa-key"></i>
+                        <h3>Key Success Factors</h3>
+                    </div>
+                    <div class="factors-content">
+                        <p>Success requires <strong>sustained commitment to intensive foundational development</strong> while leveraging proven strengths in creativity and communication. The combination of honest self-assessment, structured improvement planning, and professional humility creates an opportunity for transforming current limitations into comprehensive engineering competence. This honest assessment represents not just an evaluation, but <strong>a commitment to the intensive work required</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="action-conclusion">
+                    <p>This refined plan bridges both your <em>technical portfolio</em> (like ROS2, IoT, robotics) and your <em>learning gaps</em> (communication, analysis, project management). It sets a clear professional trajectory, from immediate growth to long-term leadership.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Experience -->
+        <section class="education-experience" id="education">
+            <div class="container">
+                <h2 class="section-title">Education & Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Engineering (Hons) in Mechatronics</h3>
+                            <p>Asia Pacific University (APU) • Expected 2025</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Masters of Engineering (Hons) in Mechatronics</h3>
+                            <p>De Montfort University (DMU) UK • Expected 2025</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Engineering Intern</h3>
+                            <p>Kuwait Aviation Fuelling Company (KAFCO)</p>
+                            <span class="date">June 2024 - November 2024 (5 months)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Showcase -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-robot"></i>
+                            <h3>Robotics & Automation</h3>
+                        </div>
+                        <ul>
+                            <li>ROS2 & Gazebo</li>
+                            <li>PLC Programming</li>
+                            <li>Sensor Integration</li>
+                            <li>Motion Control</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-microchip"></i>
+                            <h3>Embedded Systems</h3>
+                        </div>
+                        <ul>
+                            <li>ARM Architecture</li>
+                            <li>RTOS</li>
+                            <li>Circuit Design</li>
+                            <li>IoT Integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming</h3>
+                        </div>
+                        <ul>
+                            <li>Python & C++</li>
+                            <li>MATLAB</li>
+                            <li>Arduino</li>
+                            <li>Assembly</li>
+                        </ul>
+                    </div>
+
+                    <div class="illustration-container car-illustration">
+                        <object data="car-repair.svg" type="image/svg+xml" class="car-svg"></object>
+                    </div>
+
+                    <div class="illustration-container drone-illustration">
+                        <object data="flying-dron.svg" type="image/svg+xml" class="drone-svg"></object>
+                    </div>
+
+                    <div class="illustration-container robot">
+                        <object data="robotaha.svg" type="image/svg+xml" class="drone-svg"></object>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Projects Showcase -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Smart Grid Management -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="electricity.svg" alt="Smart Grid Management">
+                        </div>
+                        <div class="project-info">
+                            <h3>Smart Grid Management</h3>
+                            <div class="project-tech">
+                                <span>IoT</span>
+                                <span>PLC</span>
+                                <span>SCADA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Automated Assessment System -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="exams.svg" alt="Automated Assessment System">
+                        </div>
+                        <div class="project-info">
+                            <h3>Automated Assessment System</h3>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>ML</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Autonomous Mobile Robot -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="robotics.svg" alt="Autonomous Mobile Robot">
+                        </div>
+                        <div class="project-info">
+                            <h3>Autonomous Mobile Robot</h3>
+                            <div class="project-tech">
+                                <span>ROS2</span>
+                                <span>C++</span>
+                                <span>SLAM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smart Manufacturing Cell -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="firmware.svg" alt="Smart Manufacturing Cell">
+                        </div>
+                        <div class="project-info">
+                            <h3>Smart Manufacturing Cell</h3>
+                            <div class="project-tech">
+                                <span>PLC</span>
+                                <span>HMI</span>
+                                <span>Digital Twin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Conclusion Section -->
+        <section class="conclusion" id="conclusion">
+            <div class="container">
+                <h2 class="section-title">Professional Development Conclusion</h2>
+                <div class="conclusion-content">
+                    <div class="conclusion-summary">
+                        <div class="summary-text">
+                            <h3 class="text-gradient">Synthesis of Learning and Growth</h3>
+                            <p class="text-large">This E-Portfolio represents a comprehensive documentation of my
+                                journey as an aspiring Mechatronics Engineer, highlighting the critical importance of
+                                continuous professional development in today's rapidly evolving engineering landscape.
+                            </p>
+
+                            <div class="key-insights">
+                                <div class="insight-item">
+                                    <h4>Technical Excellence</h4>
+                                    <p>Through rigorous academic training and practical application, I have developed a
+                                        strong foundation in mechatronic systems, robotics, and automation technologies.
+                                        My technical competencies demonstrate readiness for professional engineering
+                                        challenges while identifying areas for continued growth.</p>
+                                </div>
+
+                                <div class="insight-item">
+                                    <h4>Professional Competencies</h4>
+                                    <p>The SWOT analysis reveals strong collaborative skills, effective communication
+                                        abilities, and a commitment to lifelong learning. These professional attributes,
+                                        combined with technical expertise, position me well for contributing to
+                                        multidisciplinary engineering teams.</p>
+                                </div>
+
+                                <div class="insight-item">
+                                    <h4>Continuous Improvement</h4>
+                                    <p>The Program Outcomes evaluation has provided valuable insights into my current
+                                        capabilities and future development needs. This structured approach to
+                                        self-assessment ensures targeted improvement efforts and measurable progress
+                                        toward professional goals.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="conclusion-visual">
+                            <div class="achievement-metrics">
+                                <div class="metric-card">
+                                    <div class="metric-value">85%</div>
+                                    <div class="metric-label">Average PO Attainment</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-value">12+</div>
+                                    <div class="metric-label">Technical Skills Mastered</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-value">4</div>
+                                    <div class="metric-label">Major Projects Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="future-commitment">
+                        <h3>Commitment to Lifelong Learning</h3>
+                        <p>As demonstrated throughout this portfolio, my commitment to independent and lifelong learning
+                            extends beyond academic requirements. I recognize that the engineering profession demands
+                            continuous adaptation to emerging technologies, evolving industry standards, and changing
+                            societal needs.</p>
+
+                        <div class="commitment-pillars">
+                            <div class="pillar">
+                                <i class="fas fa-book-open"></i>
+                                <h4>Knowledge Acquisition</h4>
+                                <p>Continuous learning through formal education, professional development courses, and
+                                    self-directed study</p>
+                            </div>
+                            <div class="pillar">
+                                <i class="fas fa-users-cog"></i>
+                                <h4>Professional Networking</h4>
+                                <p>Active engagement with professional communities, industry experts, and academic
+                                    institutions</p>
+                            </div>
+                            <div class="pillar">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Innovation Focus</h4>
+                                <p>Commitment to contributing innovative solutions that address real-world engineering
+                                    challenges</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="final-statement">
+                        <blockquote>
+                            "This E-Portfolio serves not only as a documentation of my current capabilities but as a
+                            foundation for my continued professional development. I am committed to leveraging these
+                            insights to become a competent, ethical, and innovative Mechatronics Engineer who
+                            contributes meaningfully to the advancement of engineering practice and society."
+                        </blockquote>
+                        <cite>- Mahmoud Khairy, Mechatronics Engineering Student</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <i class="fas fa-envelope"></i>
+                                <h3>Email</h3>
+                                <p>tp066167@mail.apu.edu.my</p>
+                            </div>
+                            <div class="contact-card">
+                                <i class="fas fa-phone"></i>
+                                <h3>Phone</h3>
+                                <p>+60134457353</p>
+                            </div>
+                            <div class="contact-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>Location</h3>
+                                <p>Bukit Jalil, Kuala Lumpur</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/mody-khairy-0023322ba/" class="social-link"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/mahmoud-khairy" class="social-link"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="https://instagram.com/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-illustration">
+                        <img src="contact.svg" alt="Contact illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mahmoud Khairy. Professional E-Portfolio for Academic Assessment.</p>
+                <p class="footer-note">This portfolio demonstrates continuous professional development and lifelong
+                    learning commitment in Mechatronics Engineering.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
